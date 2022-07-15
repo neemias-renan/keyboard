@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background: #3B3F42;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background{
+	background-image: url("imgs/background.svg");
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center;
+	    background-size: cover;
+}
+.div{
+	width: 715px;
+	height: 458px;
+	filter: drop-shadow(17px 15px 16px rgba(0, 0, 0, 0.25));
+	zoom: 80%;
+
+}
+
+.nav{
+	    width: 100%;
+    height: 72px;
+    position: absolute;
+    top: 0px;
+    background: #2E2E2E;
+    z-index: 3;
+    font-family: 'Press Start 2P';
+    color: #D2E4FF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 12px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.nav h4{
+	margin-right: 19em;
+}
+
+.div .header{
+	      width: 103%;
+    height: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.div .header .power{
+	  display: flex;
+    align-items: flex-end;
+    margin-bottom: -0.6em;
+}
+
+.div .header .cables{
+	  display: flex;
+    gap: 43px;
+    margin-bottom: -4.3px;
+}
+
+.div .header .cables .cabe{
+		display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    gap: 43px;
+    margin-bottom: -0.3em;
+}
+
+
+.main{
+	width: 100%;
+  height: 100%;
+	background: #A01A1A;
+	border: 10px solid #020000;
+	box-shadow: inset 0px 15px 8px 0px rgba(182, 196, 205, 0.55);
+	border-radius: 29px;
+}
+
+.main header{
+	  width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.main header .container1, .main header .container2, .main header .container3{
+	  width: 100%;
+    height: 100%;
+}
+.main header .container1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: -1em;
+    margin-left: 1.9em;
+        width: 28em;
+}
+.main header .container1 .rectangle{
+	  width: 153px;
+    height: 50px;
+    background: #545454;
+    border: 8px solid #000000;
+    border-radius: 17px;
+    box-shadow: inset 7px 7px 2px rgb(255 255 255 / 25%);
+    filter: drop-shadow(6px 6px 1px rgba(0, 0, 0, 0.25)) drop-shadow(-3px -5px 3px rgba(255,255,255,0.3));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -2em;
+}
+.main header .container1 .rectangle .viewfinder{
+	width: 141px;
+	height: 38px;
+	left: 415px;
+	top: 351px;
+	
+	background: #1E2944;
+	border: 3px solid #000000;
+	border-radius: 5px;
+
+	justify-content: flex-start;
+  align-items: center;
+	display: flex;
+}
+.main header .container1 .rectangle .viewfinder .titleInstrument{
+	font-family: 'Press Start 2P';
+	color: #D2E4FF;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 12px;
+	margin:0;
+	padding: 1em;
+	text-transform: uppercase;
+}
+.main header .container1 .rectangle .viewfinder .glass{
+	position:absolute;	
+}
+
+.main header .container2{
+	display: flex;
+  flex-direction: row;
+  width: fit-content;
+  gap: 23px;
+}
+.main header .container2 .fade{
+	width: 100%;
+  height: 100%;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main header .container2 .fade .buttonFade1,.main header .container2 .fade .buttonFade2,.main header .container2 .fade .buttonFade3{
+	  background: #58504E;
+    border: 4px solid #000000;
+    box-shadow: 6px 6px 4px rgb(0 0 0 / 25%), inset 7px 7px 5px rgb(255 255 255 / 25%);
+    border-radius: 7px;
+    width: 31px;
+    height: 14px;
+    position: absolute;
+}
+.main header .container2 .fade input{
+    -webkit-appearance: none;
+    all: unset;
+    position: absolute;
+    transform: rotate(270deg);
+    width: 5.8em;
+	cursor:pointer;
+}
+input[type='range'],
+input[type='range']::-webkit-slider-runnable-track,
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type='range']::-webkit-slider-thumb {
+	  background: #58504E;
+    border: 4px solid #000000;
+    box-shadow: -6px 6px 4px rgb(0 0 0 / 25%), inset -7px 7px 5px rgb(255 255 255 / 25%);
+    border-radius: 7px;
+    width: 21px;
+    height: 38px;
+}
+    
+.main header .container2 .fade .buttonFade1{
+	margin-top: -2em;
+}
+
+.main header .container2 .fade .buttonFade2{
+	margin-top: 2em;
+}
+
+.main header .container2 .fade .buttonFade3{
+	margin-top: -3em;
+}
+
+.main header .container3{
+    display: flex;
+    flex-direction: column;
+    height: 8.5em;
+    padding-left: 2em;
+}
+
+.main header .container3 .tones1,.main header .container3 .tones2{
+	width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 9px;
+}
+
+.main header .container3 .tones1{
+    margin-top: 1em;
+}
+
+.main header .container3 .tones2{
+    margin-left: 2em;
+}
+
+.main header .container3 .tones1 .tone{
+	display: flex;
+  flex-direction: row;
+}
+
+.main header .container3 .tones2 .tone{
+	    display: flex;
+    flex-direction: row;
+}
+.main header .container3 .tones1 .tone .circle, .main header .container3 .tones2 .tone .circle{
+	  filter: drop-shadow(6px 6px 2px rgb(0 0 0 / 27%));
+}
+
+.main header .container3 .tones1 .tone img,.main header .container3 .tones2 .tone img{
+	  transform: rotate(245deg);
+}
+.circle{
+	filter: drop-shadow(6px 6px 1px rgba(0, 0, 0, 0.25)) drop-shadow(-3px -5px 3px rgba(255,255,255,0.3)) !important;
+}
+#tone1{
+	transform: rotate(-19.1deg);
+}
+#tone2{
+	transform: rotate(43.76deg);
+}
+#tone3{
+	transform: rotate(-94.47deg);
+}
+#tone4{
+	transform: rotate(126.97deg);
+}
+#tone5{
+	transform: rotate(-175.41deg);
+}
+#tone6{
+	transform: rotate(-140.18deg);
+}
+#tone7{
+	transform: rotate(163.12deg);
+}
+#tone8{
+	transform: rotate(83.77deg);
+}
+
+.main main{
+		width: 100%;
+    height: 60%;
+		display:flex;
+}
+
+.main main .control_volume{
+	  width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main main .control_volume .control{
+		background: #3E3D3D;
+		border: 6px solid #000000;		
+		box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25), inset 7px 7px 5px rgba(255, 255, 255, 0.25);
+		border-radius: 18px;
+		width: 29px;
+		height: 125px;
+		filter: drop-shadow(6px 6px 1px rgba(0, 0, 0, 0.25)) drop-shadow(-3px -5px 3px rgba(255,255,255,0.3));
+
+}
+
+.main main .keys{
+		width: 100%;
+    background: #7E7E7E;
+    border: 10px solid #020000;
+    border-radius: 23px;
+    margin-bottom: -7.2px;
+    margin-right: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.main main .keys .keysWhite{
+    display: flex;
+    flex-direction: row;
+}
+.main main .keys .keysWhite .key{
+		width: 46px;
+    height: 264px;
+    background: #F5F5F5;
+    border: 5px solid #000000;
+    box-shadow: inset -10px -10px 3px 2px #c3c4c4;
+    border-radius: 9px;
+    margin-top: -4px;
+}
+
+.main main .keysBlack{
+		display: flex;
+    flex-direction: row;
+		position: absolute;
+		gap: 53px;
+	  margin-top: -2px;
+}
+.main main .keysBlack .duo,.main main .keysBlack .trio{
+		display: flex;
+    gap: 6px;
+}
+.main main .keysBlack .duo .key, .main main .keysBlack .trio .key{
+	width: 40px;
+    height: 180px;
+	background: #555452;
+border: 7px solid #000000;
+box-shadow: inset -14px -12px 8px #343331;
+border-radius: 9px;
+    margin-top: -4px;
+		
+}
+
+.key:active{
+	background: #39A5AC !important;
+    box-shadow: inset 1px -7px 10px 3px rgb(0 0 0 / 57%) !important;
+}
+
+.press{
+	    background: #39A5AC !important;
+    box-shadow: inset 1px -7px 10px 3px rgb(0 0 0 / 57%) !important;
+}
